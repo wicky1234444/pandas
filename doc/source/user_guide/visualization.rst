@@ -1332,8 +1332,8 @@ otherwise you will see a warning.
 
 .. ipython:: python
 
-   fig, axes = plt.subplots(4, 4, figsize=(6, 6))
-   plt.subplots_adjust(wspace=0.5, hspace=0.5)
+   fig, axes = plt.subplots(4, 4, figsize=(8, 6))
+   plt.subplots_adjust(wspace=0.4, hspace=0.7)
    target1 = [axes[0][0], axes[1][1], axes[2][2], axes[3][3]]
    target2 = [axes[3][0], axes[2][1], axes[1][2], axes[0][3]]
 
@@ -1368,7 +1368,7 @@ Another option is passing an ``ax`` argument to :meth:`Series.plot` to plot on a
 
 .. ipython:: python
 
-   fig, axes = plt.subplots(nrows=2, ncols=2)
+   fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(6,8))
    df['A'].plot(ax=axes[0, 0]);
    axes[0, 0].set_title('A');
    df['B'].plot(ax=axes[0, 1]);
